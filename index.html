@@ -232,6 +232,8 @@ const questions = [
 </script>
 <script>
 function startExam(){
+  document.getElementById("startSection").style.display = "none";
+
   const examDiv = document.getElementById("exam");
   examDiv.innerHTML = "";
 
@@ -264,7 +266,7 @@ function startExam(){
 
 </div>
 
-<div class="section">
+<div class="section" id="startSection">
   <button onclick="startExam()">Start Exam</button>
 </div>
 
